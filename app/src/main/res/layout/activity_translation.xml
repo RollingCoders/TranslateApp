@@ -6,15 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.apaar97.translate.TranslationActivity">
-    <TextView
-        android:id="@+id/empty_view_not_connected"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="32dp"
-        android:text="@string/no_internet_connection"
-        android:textSize="24sp"
-        android:gravity="center"/>
+    tools:context="com.example.rolling.translate.TranslationActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -108,4 +101,14 @@
             android:layout_alignParentRight="true"
             android:layout_margin="8dp"/>
     </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-4975056503352119/3501202442">
+    </com.google.android.gms.ads.AdView>
 </LinearLayout>

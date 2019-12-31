@@ -7,7 +7,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.apaar97.translate.HomeActivity">
+    tools:context="com.example.rolling.translate.HomeActivity">
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-4975056503352119/3501202442">
+    </com.google.android.gms.ads.AdView>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -37,16 +47,5 @@
         android:textSize="17sp"
         android:background="@drawable/button_shape"/>
 
-    <Button
-        android:id="@+id/about"
-        android:layout_width="@dimen/start_buttons_width"
-        android:layout_height="@dimen/start_buttons_height"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginBottom="24dp"
-        android:text="@string/about"
-        android:textColor="@android:color/white"
-        android:textSize="17sp"
-        android:background="@drawable/button_shape"/>
 
 </LinearLayout>

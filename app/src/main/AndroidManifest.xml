@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.apaar97.translate">
+    package="com.example.rolling.translate">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcherc"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomeActivity"
+            android:name="com.example.rolling.translate.HomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,31 +22,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutActivity"
+            android:name="com.example.rolling.translate.AboutActivity"
             android:label="@string/about"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="com.example.rolling.translate.HomeActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value="com.example.rolling.translate.HomeActivity" />
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4975056503352119~9220432985"/>
         <activity
-            android:name=".ConversationActivity"
+            android:name="com.example.rolling.translate.ConversationActivity"
             android:label="@string/new_conversation"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="com.example.rolling.translate.HomeActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value="com.example.rolling.translate.HomeActivity" />
         </activity>
         <activity
-            android:name=".TranslationActivity"
+            android:name="com.example.rolling.translate.TranslationActivity"
             android:label="@string/new_translate"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="com.example.rolling.translate.HomeActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
+                android:value="com.example.rolling.translate.HomeActivity" />
         </activity>
     </application>
 
